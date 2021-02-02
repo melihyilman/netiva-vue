@@ -1,0 +1,28 @@
+// app global css in SCSS form
+.pr-0 {
+  padding-right: 0 !important;
+}
+
+.small-screen-only {
+  @media (max-width: $breakpoint-xs-max) {
+    display: block;
+  }
+  @media (min-width: $breakpoint-sm-min) {
+    display: none;
+  }
+}
+.center-on-mobile {
+  @media (max-width: $breakpoint-xs-max) {
+    text-align: center;
+  }
+}
+.block-on-mobile {
+  @media (max-width: $breakpoint-md-min) {
+    display: block;
+  }
+}
+.bg-fancy {
+  background-color: $purple-4;
+  opacity: 0.7;
+  color: black;
+}
